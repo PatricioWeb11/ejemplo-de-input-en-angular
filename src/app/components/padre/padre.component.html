@@ -1,2 +1,5 @@
 <h2>Componente Padre</h2>
+<h3>Agregar Personaje</h3>
+<input type="text" name="nombre" placeholder="nombre del personaje" [(ngModel)]="personaje">
+<button (click)="agregar()">Agregar</button>
 <app-hijo [personajes]="personajes"></app-hijo>

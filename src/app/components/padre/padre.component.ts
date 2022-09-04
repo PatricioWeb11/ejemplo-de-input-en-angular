@@ -8,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PadreComponent implements OnInit {
 
+  personaje: string = '';
+
   personajes: string[] = ['guku', 'gohan', 'trunks', 'vegeta', 'picoro'];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  agregar(){
+    this.personajes.push(this.personaje);
+    this.personaje = '';
   }
 
 
